@@ -46,7 +46,7 @@ const Form = () => {
             <input className={"input"} type={"text"} placeholder={'Viloyat'} value={country} onChange={onChangeCountry}/>
             <input className={"input"} type={"text"} placeholder={'Shahar'} value={city} onChange={onChangeCity}/>
             <input className={"input"} type={"text"} placeholder={'kocha'} value={street} onChange={onChangeStreet}/>
-            <select className={'select'}  onChange={subject} value={subject} >
+            <select className={'select'}  onChange={onChangeSubject} value={subject} >
                 <option value={'physical'}> physical</option>
                 <option value={'legal'}> ur.litso</option>
             </select>
