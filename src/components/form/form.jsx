@@ -45,7 +45,7 @@ const Form = () => {
             <h3>Malumotlaringizni kiriting</h3>
             <input className={"input"} type={"text"} placeholder={'Viloyat'} value={country} onChange={onChangeCountry}/>
             <input className={"input"} type={"text"} placeholder={'Shahar'} value={city} onChange={onChangeCity}/>
-            <input className={"input"} type={"text"} placeholder={'kocha'} value={city} onChange={onChangeCity}/>
+            <input className={"input"} type={"text"} placeholder={'kocha'} value={street} onChange={onChangeStreet}/>
             <select className={'select'}  onChange={subject} value={subject} >
                 <option value={'physical'}> physical</option>
                 <option value={'legal'}> ur.litso</option>
