@@ -9,7 +9,7 @@ const Form = () => {
     const [subject, setSubject] = useState('physical')
     const {tg} = useTelegram()
     useEffect(() => {
-        tg.MainButton.setparams({
+        tg.MainButton.setparam({
             text: 'Malumotlarni yuborish'
         })
     }, []);
