@@ -9,10 +9,13 @@ const Form = () => {
     const [subject, setSubject] = useState('physical')
     const {tg} = useTelegram()
     useEffect(() => {
-        tg.MainButton.setparams({
+    if (tg && tg.MainButton) {
+        tg.MainButton.setParams({
             text: 'Malumotlarni yuborish'
-        })
-    }, []);
+        });
+    }
+}, [tg]);
+
 
     useEffect(() => {
         if(!street || !country){
