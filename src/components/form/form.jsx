@@ -3,7 +3,6 @@ import './form.css'
 import {useTelegram} from "../../hooks/useTelegram";
 
 const Form = () => {
-
     const [country, setCountry] = useState();
     const [street, setStreet] = useState()
     const [city, setCity] = useState()
@@ -16,7 +15,7 @@ const Form = () => {
     }, []);
 
     useEffect(() => {
-        if(!street || !country || !city){
+        if(!street || !country){
             tg.MainButton.hide()
         } else {
             tg.MainButton.show()
